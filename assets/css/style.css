@@ -1,0 +1,2824 @@
+/*
+* Md.Rakib Hosen
+*/
+
+html{
+  font-size: 62.5%;
+  /*line-height: 1.5;*/
+  /*#6fda44*/
+  /*#008329*/
+
+}
+:root{
+  --primary_color: #000000;
+  --primary_gray: #6C757D;
+  --Secondary_white: #ffffff;
+  --Secondary_blue: #0069D9;
+  --Secondary_green: #218838;
+  --Secondary_yellow: #FAC007;
+  --Secondary_blue_hue: #6288B0;
+}
+body{
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  position: relative;
+  color: var(--primary_color);
+}
+ul,li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+a:hover{
+  color: var(--primary);
+}
+img{
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.3;
+}
+.btn_style{
+  color: #fff;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 10px;
+  border: 1px solid #00B2D9;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.btn_style:hover{
+  background: transparent;
+  color: #fff;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+.coins_withdraw_btn a{
+  background: var(--Secondary_yellow);
+  margin-left: 15px;
+  -webkit-box-shadow: 0px 10px 24px 0px #00000024;
+          box-shadow: 0px 10px 24px 0px #00000024;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.coins_withdraw_btn a:first-child:hover {
+  background: #218838d6;
+}
+.coins_withdraw_btn a:hover,
+.sh_watch_btn_sty:hover{
+  color:var(--primary);
+  background: #FAC007C2;
+}
+.coins_withdraw_btn a:hover {
+  background: #FAC007BF;
+}
+.sh_watch_btn_sty{
+  line-height: 21px;
+  display: block;
+  text-align: center;
+  color: var(--Secondary_white);
+  background: var(--Secondary_green);
+  font-size: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 7px 13px 0px #0000001A;
+          box-shadow: 0px 7px 13px 0px #0000001A;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.sh_watch_btn_sty_2{
+  color: var(--primary);
+  background: var(--Secondary_yellow);
+}
+.sh_watch_btn_sty_2:hover{
+  color: var(--Secondary_white);
+  background: var(--Secondary_green);
+}
+
+
+.nav-button{position:relative; z-index:1111; border:solid 1px transparent;  height:42px; display:block; width:50px; padding:12px; cursor: pointer;}
+.nav-button #nav-icon3{width:26px;height:20px;display:inline-block;position:relative;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;transition:.5s ease-in-out;cursor:pointer;}
+.nav-button #nav-icon3 span{display:block;position:absolute;height:2px;width:100%;background:#fff;border-radius:9px;opacity:1;left:0;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out}
+.nav-button #nav-icon3 span:nth-child(1){top:0}
+.nav-button #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3){top:7px}
+.nav-button #nav-icon3 span:nth-child(4){top:15px}
+.nav-open #nav-icon3 span:nth-child(1){top:9px;width:0;left:50%}
+.nav-open #nav-icon3 span:nth-child(2){-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
+.nav-open #nav-icon3 span:nth-child(3){-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg)}
+.nav-open #nav-icon3 span:nth-child(4){top:9px;width:0;left:50%}
+.navbar{
+  padding-top: 0;
+}
+
+/* ==============================================================================================================================
+                                      Start Landing paage  
+================================================================================================================================ */
+
+/*   ==========================================   1. Header area css start     =======================================  */
+.l_header_top_menu_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.l_header_right_hambar_menu ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.l_header_right_hambar_menu ul > li > a{
+  margin: 0 10px;
+}
+.l_header_area {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* min-height: 586px; */
+  /* background-color: #999; */
+  padding: 10px 0 20px 0;
+}
+.l_header_logo img {
+  width: 70px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* Body content area start  */
+.l_header_content_area {
+  background: rgba(255, 255, 255, 0.47);
+  max-width: 700px;
+  padding: 14px 22px 25px 22px;
+  border-radius: 18px;
+  margin: 200px 0 80px 0;
+}
+.l_header_content_area .btn_style{
+  padding: 8px 30px;
+}
+.l_header_content_area p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding:34px 0;
+}
+.zs-enabled .zs-slideshow .zs-bullets .zs-bullet{
+  border: 1px solid #fff;
+  background: transparent;
+}
+.zs-enabled .zs-slideshow .zs-bullets .zs-bullet.active{
+  background: #FAC007;
+  border: 1px solid #FAC007;
+}
+
+/*   =============   SH Header area css start     =================  */
+
+.header_area{
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 26px 0px #00000040;
+          box-shadow: 0px 4px 26px 0px #00000040;
+  padding: 10px 20px;
+}
+.logo{
+  width: 62px;
+  height: auto;
+}
+.logo a{
+  display: inline-block;
+  position: relative;
+}
+
+
+.header_menu_right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    float: right;
+    position: relative;
+}
+.header_menu_right ul li{
+  margin-left: 30px;
+} 
+.header_menu_right ul li:first-child{
+  margin-left: 0;
+} 
+.header_menu_right ul li a{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+} 
+.header_menu_right ul li a:hover{
+  color:  var(--Secondary_blue);
+}
+.header_menu_right ul li:not(:last-child) a i{
+  padding-right: 10px;
+}
+
+.header_menu_right ul li ul {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 160px;
+  height: auto;
+  background: #fff;
+  display: unset;
+  border-radius: 8px;
+  padding: 8px 1px;
+  text-align: left;
+  -webkit-box-shadow: 0px 2px 20px 0px #00000040;
+          box-shadow: 0px 2px 20px 0px #00000040;
+  z-index: 288;
+  display: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header_menu_right ul li ul li{
+  margin-left: 0;
+}
+.header_menu_right ul li ul li a{
+  text-align: center;
+  display: block;
+  padding: 6px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header_menu_right ul li ul li a:hover{
+  background: #f5f5f5;
+}
+.header_menu_right ul li.active ul{
+  display: block;
+}
+
+
+.link_rotate{
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding-right: 0px !important;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.header_menu_right ul li:last-child a i{
+  padding-right: 5px;
+}
+.header_menu_right ul li:last-child a i:last-child{
+  padding-left: 5px;
+  padding-right: 0;
+}
+/*   =============   SH Header area css start     =================  */
+
+
+/*  ====  1. Header area css end    ===========   */
+
+
+/*  ========  1. Header area css end =============   */
+
+
+.l_header_main_menu_area ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 65px;
+  display: none;
+}
+.l_header_main_menu_area ul li a {
+  display: block;
+  background:linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  color: #fff;
+  padding: 7px 0;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+.l_header_main_menu_area ul li a:hover {
+  background: linear-gradient(124.18deg, #00B2D9AD -15.15%, rgba(13, 188, 196, 0.66) 36.28%, rgba(41, 211, 150, 0.62) 102.4%);
+  border: 1px solid #00B2D996;
+}
+/* Mobile Menu end */
+.l_according_main_area{
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  padding: 60px 0 100px 0;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+}
+.l_according_main_area::before{
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  background: url('../images/Saly-1.png') no-repeat scroll 0 0 / cover;
+  z-index: 1;
+}
+.l_according_main_area_text{
+  position: relative;
+  z-index: 99;
+}
+.l_according_main_area .accordion-item {
+  margin: 20px 0;
+  border-radius: 0 15px 15px 0 !important;
+  background: transparent;
+  
+}
+.accordion-flush .accordion-item .accordion-button {
+  /* box-shadow: 0px 5px 0px red; */
+}
+.accordion-button:not(.collapsed) {
+  color: #0c63e4;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+          box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+  border-radius: 0px 15px 15px 0 !important;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.accordion-button{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 20px 10px 20px 50px;
+}
+.accordion-button img{
+  width: 40px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
+}
+.accordion-button::after {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("../images/landing/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  -o-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/landing/arrow.png");
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.accordion-button:not(.collapsed){
+  color: #000;
+}
+.accordion-body {
+  margin: 0 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 16px 16px;
+  padding: 20px 30px;
+}
+.accordion-button.collapsed {
+  border-radius: 0 15px 15px 0 !important;
+}
+  .login-hide-show-area-start,
+  .login_background_logo{
+    position: relative;
+    z-index: 9999;
+  }
+  
+/*  ===========================================    1. Header area css end     =========================================   */
+
+.l_earned_main_area {
+  padding: 70px 0 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+/* Top Area start  */
+.l_earned_top_area{
+  margin-bottom: 60px;
+  position: relative;
+}
+.l_earned_top_area_sub {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  background: #fff;
+  z-index: 99;
+}
+.l_earned_top_area::after {
+  content: "";
+  position: absolute;
+  left: -219px;
+  bottom: -157px;
+  width: 300px;
+  height: 300px;
+  background: url('../images/landing/circle.png') no-repeat scroll 0 0 / cover;
+  z-index: -1;
+}
+.l_earned_top_area::before {
+  content: "";
+  position: absolute;
+  right: -136px;
+  top: -56px;
+  width: 162px;
+  height: 162px;
+  background: url('../images/landing/circle.png') no-repeat scroll 0 0 / cover;
+  z-index: -1;
+}
+.l_earned_top_area_sub p{
+  font-size: 40px;
+  font-weight:400 ;
+  color: #000;
+}
+.l_earned_top_area_sub p strong{
+  color: #0069D9;
+}
+.l_earned_top_area_sub h5{
+  font-size: 50px;
+  font-weight: 700;
+  color: #29D396;
+}
+
+/* Bottom Area start  */
+.l_earned_bottom_area{
+
+}
+.baner_video {
+  position: relative;
+  z-index: 99;
+}
+.video_img{
+  width: 100%;
+  position: relative;
+}
+.video_img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video_play {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.video_play a i {
+    font-size: 60px;
+    color: rgba(13, 188, 196, 0.975);
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.video_play a{
+  border-radius: 50%;
+  display: inline-block;
+}
+.video_play a:hover i{
+  color: #2F5BEA;
+}
+/*  ===========================================    1. Header area css end     =========================================   */
+
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+.l_choosing_main_area{
+  background: #6288B0;
+  padding: 50px 0 120px 0;
+  position: relative;
+}
+.l_choosing_main_area::after {
+  content: "";
+  position: absolute;
+  left: -148px;
+  top: -148px;
+  width: 400px;
+  height: 400px;
+  background: url('../images/landing/cyr.png') no-repeat scroll 0 0 / cover;
+  z-index: ;
+}
+.l_choosing_text_area{
+  position: relative;
+  z-index: 99;
+}
+.l_choosing_text_area h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #FAC007;
+  text-align: center;
+  padding-bottom: 70px;
+}
+/* Single Item area start  */
+.l_choosing_single_item{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.l_choosing_single_item_left p {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 22px;
+  color: #0069D9;
+  line-height: 2.3;
+}
+.l_choosing_single_item_right_sub p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+.l_connectus_main_area{
+  padding: 70px 0 120px 0;
+  position: relative;
+}
+.l_connectus_main_area:after{
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 700px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+.l_connectus_text_area{
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  padding: 40px 70px 80px 70px;
+  border-radius: 18px;
+}
+.l_connectus_text_area h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+.l_connectus_text_area p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.l_connectus_single_item input{
+  height: 60px;
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+.l_connectus_single_item input::-webkit-input-placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+.l_connectus_single_item input::-moz-placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+.l_connectus_single_item input:-ms-input-placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+.l_connectus_single_item input::-ms-input-placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+.l_connectus_single_item input::placeholder{
+  font-size: 16px;
+  font-weight: 500;
+}
+.l_connectus_single_item_btn{
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 40px;
+}
+.form_btn_style{
+  text-align: center;
+  background: #FAC007;
+  color: #000;
+  padding: 17px 0px;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #FAC007;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.form_btn_style:hover{
+  opacity: 85%;
+}
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+.landing_footer_main_area{
+  padding: 90px 0 130px 0;
+}
+.landing_footer_logo{
+  text-align: center;
+}
+.landing_footer_logo a {
+  display: inline-block;
+}
+.landing_footer_logo a img {
+  width: 130px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* Social midea  */
+.landing_footer_social h4 {
+  text-align: center;
+  padding: 20px 0 22px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #121212;
+}
+.landing_footer_social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.landing_footer_social ul li a{
+  margin: 0 30px;
+}
+.landing_footer_social ul li a img{
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/* Menu area start  */
+.landing_footer_menu_sub ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+}
+.landing_footer_menu_sub ul li a{
+  font-size: 15px;
+  font-weight: 300;
+  color: #121212;
+  padding: 5px 8px;
+  margin:0 20px;
+}
+
+/* Copyright area start  */
+.landing_footer_copyright p {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.landing_footer_copyright p a{
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*  ===========================================    1. Header area css end     =========================================   */
+
+
+
+
+/* ==============================================================================================================================
+                                      End Landing paage  
+================================================================================================================================ */
+
+
+/* ==============================================================================================================================
+                                      Start Login paage  
+================================================================================================================================ */
+
+.login_text_area{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+.login_text_area{
+  height: 100vh;
+}
+.login_background_logo{
+  margin: auto;
+  padding-top:40px;
+  text-align: center;
+}
+.login_background_logo a img {
+  width: 110px;
+  height: auto;
+}
+
+/* Login Left area start  */
+.login-hide-show-area-start {
+  display: none;
+}
+.login_left{
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+.login_background_left_area {
+  position: relative;
+  height: 100vh;
+  z-index: 99;
+}
+.login_background_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 84, 19, 0.79)), to(rgba(15, 150, 31, 0.89)));
+  background: -o-linear-gradient(top, rgba(10, 84, 19, 0.79) 0%, rgba(15, 150, 31, 0.89) 100%);
+  background: linear-gradient(180deg, rgba(10, 84, 19, 0.79) 0%, rgba(15, 150, 31, 0.89) 100%);
+  border-radius: 50px 49px 0px 0px;
+  color: #fff;
+  padding: 33px 20px 100px 20px;
+  z-index: 9999;
+}
+.login_background_text_sub h5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+
+/* Login Right area start  */
+.login_right{
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  height: 100vh;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+}
+.login_right {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+.login_right input{
+  width: 100%;
+}
+
+
+/* Password Area start  */
+
+.login_background_left_area {
+  position: relative;
+  
+}
+.login_background_right_area{
+  padding: 130px 50px 30px 50px;
+  position: relative;
+}
+.login_background_right_area:after{
+  
+}
+.login_background_left_area label {
+  color: gray;
+  padding: 12px 0 10px 0;
+}
+.login_background_left_area input {
+  /* padding: 15px; */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  overflow: visible;
+  margin: 0;
+  max-width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  vertical-align: middle;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  background: transparent;
+  width: 100%;
+}
+.login_background_left_area input:focus{
+  border-right: 0;
+}        
+.login_background_left_area button {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: none;
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit; /* Correction for bug with Safari on :active */
+  line-height: 1;
+  overflow: visible;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: button;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    background: transparent;
+}
+.login_background_left_area .shpass button {
+  border-left: 0;
+  border-radius: 0px 7px 7px 0;
+}
+.login_background_left_area button, input {
+  outline: 2px solid transparent;
+
+}
+.login_background_left_area button:focus, .login_background_left_area input:focus {
+  outline-color: currentColor;
+}
+.login_background_left_area button:focus:not(:focus-visible), .login_background_left_area input:focus:not(:focus-visible) {
+  outline: 0;
+}
+.login_background_left_area button:focus-visible, .login_background_left_area input:focus-visible {
+  outline-color: currentColor;
+}
+
+.login_background_left_area label {
+  font-weight: bold;
+}
+/* End demo */
+.login_background_left_area .shpass {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+}
+.login_background_left_area .shpass label {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+.login_background_left_area .shpass button svg {
+  width: 2em;
+  height: 2em;
+  fill: #245884;
+  margin-right: 5px;
+}
+.login_background_left_area .shpass path:nth-child(2) {
+  display: none;
+}
+.login_background_left_area .shpass button.shpass_show svg {
+  fill: #77838e;
+}
+.login_background_left_area .shpass button.shpass_show path:nth-child(2) {
+  display: block;
+}
+
+/* Password Area End  */
+
+.login_background_left_area h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.login_input_form_area input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  height: 40px;
+  color: #fff;
+}
+.login_input_form_area input:focus{
+  /* border: 1px solid #fff; */
+  outline: none;
+}
+.login_input_form_area label{
+  font-size: 16px;
+  font-weight: 300;
+}
+.login_input_form_area label {
+  color: #fff;
+  line-height: 0;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+.register_form_area_password button {
+  border-bottom: 1px solid #fff;
+}
+.register_form_area_password input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff !important;
+}
+.register_form_area_password input:focus {
+  background: transparent;
+  outline: none;
+  border-right: none;
+  border-bottom: 1px solid #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.register_form_area_password label {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 0;
+}
+/* Login Btn area start  */
+.register_form_area_btn input {
+  display: inline-block;
+  width: 144px;
+  border: none;
+  background: #FAC007;
+  border: 1px solid #FAC007;
+  padding: 8px;
+  border-radius: 7px;
+  margin-top: 40px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.register_form_area_btn input:hover{
+  background: #FAC007C2;
+}
+/* login Socil Midea  */
+.login_sign_area_start p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  padding-top: 20px;
+}
+.login_sign_area_start p a{
+  color: #000;
+  font-weight: 500;
+}
+.login_social_midea_area {
+  padding-top: 33px;
+}
+.login_social_midea_area p{
+  color: #fff;
+}
+.login_social_midea_area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login_social_midea_area ul li a{
+  color: #fff;
+  font-size: 27px;
+  margin-right:20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.login_social_midea_area ul li a:hover{
+  color: #FAC007;
+}
+.login_social_midea_area p {
+  font-size: 17px;
+  padding-bottom: 16px;
+  font-weight: 500;
+}
+.login_background_right_area {
+  padding-top: 133px;
+}
+.sh_humbar .nav-button #nav-icon3 span{
+  background: #000;
+}
+
+/* ==============================================================================================================================
+                                      Start paage Name 
+================================================================================================================================ */
+
+
+/*======================= main_boyd_area =======================*/
+.main_body_area{
+  padding: 35px 25px;
+}
+
+/*===================== left_sidebar style =====================*/
+.main_left_sidbear_navigation{
+  background: #fff;
+}
+
+
+.navigation_list1,
+.navigation_list2{
+  background: #fff;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 4px 37px 0px #0000001C;
+          box-shadow: 0px 4px 37px 0px #0000001C;
+}
+.title_bar{
+  border-radius: 18px 18px 0 0;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+}
+.navigation_list2{
+  margin-top: 18px;
+}
+.navigation_list2 .title_bar{
+  border-radius: 18px 18px 0 0;
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+
+}
+.title_bar ul li span{
+  text-align: center;
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+}
+.title_bar ul li span i{
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+
+.navigation_itam{
+  padding: 22px;
+  border-radius: 0 0 18px 18px;
+}
+.navigation_itam ul li{
+  background: #fff;
+  -webkit-box-shadow: 3px 4px 33px 0px #0000001F;
+          box-shadow: 3px 4px 33px 0px #0000001F;
+  margin-top: 15px;
+}
+.navigation_itam ul li:first-child{
+  margin-top: 0;
+}
+.navigation_itam ul li a {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px 40px;
+  color: #000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  height: 60px;
+  line-height: 60px;
+}
+.navigation_itam ul li a:hover{
+  color: #000;
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+}
+.navigation_itam ul li a span:first-child {
+  width: 30px;
+  display: block;
+  margin-right: 15px;
+  text-align: center;
+}
+.navigation_itam ul li a span img{
+  width: 15px;
+  height: auto;
+}
+.navigation_itam ul li:first-child a img{
+  width: 30px;
+}
+.navigation_itam ul li:last-child a img{
+  width: 22px;
+}
+.navigation_list2 .navigation_itam ul li a span img{
+  width: 22px;
+}
+
+
+
+/*======================= wheel Left Sidebar =======================*/
+.navigation_letest_winner{
+  margin-top: 40px;
+}
+.navigation_letest_winner h2{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  color: var(--primary_gray);
+}
+.wh_lt_winner_card{
+  padding: 12px 20px;
+  border-radius: 15px;
+  background: var(--Secondary_white);
+  -webkit-box-shadow: -2px 4px 26px 0px #00000040;
+          box-shadow: -2px 4px 26px 0px #00000040;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+.wh_lt_winner_card:last-child{
+  margin-bottom: 20px;
+}
+.winner_card1{
+  margin-top: 22px;
+}
+.wh_lt_winner_card > ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #00000085;
+}
+
+.wh_lt_winner_card ul li img{
+  width: 30px;
+  height: auto;
+}
+.wh_winning_datetime ul{
+    text-align: center;
+}
+.wh_coin{
+  font-size: 42px;
+  line-height: 65px;
+  font-weight: 700;
+}
+.wh_coin_title{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #00000060;
+  -webkit-transform: translateY( -15px);
+      -ms-transform: translateY( -15px);
+          transform: translateY( -15px);
+}
+.wh_date_time{
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #00000060;
+}
+
+
+
+/*====================================== Start main_content_area style ======================================*/
+.main_content_area{
+}
+.sh_common_card_pd{
+  padding: 25px 50px;
+}
+.coins_main_statas{  border-radius: 15px;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+  -webkit-box-shadow: 0px 4px 34px 0px #0000001A;
+          box-shadow: 0px 4px 34px 0px #0000001A;
+}
+.Hm_coins_details{
+  background: #ffffff;
+  padding: 15px 0 15px 85px;
+  border-radius: 20px;
+}
+.Hm_coins_details ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Hm_coins_details ul li{
+  margin-bottom: 15px;
+}
+.Hm_coins_details ul li:not(:first-child){
+  margin-left: 40px;
+}
+.Hm_coins_details ul li span{
+  display: inline-block;
+}
+.Hm_coins_details ul li span:first-child{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.Hm_coins_details ul li span:last-child{
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: var(--Secondary_blue);
+  margin-left: 15px;
+}
+.green_color_cus{
+  color: var(--Secondary_green) !important;
+}
+.coins_star_btn {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.coins_star_btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 275px;
+  text-align: center;
+  padding: 15px 35px;
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+  border-radius: 10px;
+  margin: 22px 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.coins_star_btn a img{
+  width: 27px;
+  height: auto;
+  margin-right: 8px;
+}
+.coins_star_btn a span{
+  display: inline-block;
+}
+.coins_star_btn a span span{
+  color: var(--Secondary_white);
+}
+
+
+.coins_withdraw_btn{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.coins_withdraw_btn a {
+  padding: 8px 40px;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 30px 0 40px;
+}
+.coins_withdraw_btn a:first-child {
+  background: var(--Secondary_green);
+  color: var(--Secondary_white);
+  margin-right: 15px;
+}
+.coins_withdraw_btn button img {
+  width: 36px;
+  height: auto;
+  margin-right: 8px;
+}
+.coins_withdraw_btn a img {
+  width: 36px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.Hm_coins_invite_firends{
+  border-radius: 10px;
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+  -webkit-box-shadow: 0px 4px 27px 0px #00000021;
+          box-shadow: 0px 4px 27px 0px #00000021;
+}
+.coins_invite_content{
+  text-align: center;
+}
+.coins_invite_content h3{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--Secondary_yellow);
+}
+.coins_invite_content p{
+  margin: 10px 0 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--Secondary_white);
+}
+.coins_invite_content form input{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  padding: 13px;
+  background: transparent;
+  -webkit-box-shadow: 8px 5px 54px 0px #0000003D;
+          box-shadow: 8px 5px 54px 0px #0000003D;
+  margin-bottom: 10px;
+}
+
+
+.Hm_coins_Q_answer{
+  padding: 20px;
+  background: var(--Secondary_blue_hue);
+  -webkit-box-shadow: 0px 4px 31px 0px #00000024;
+          box-shadow: 0px 4px 31px 0px #00000024;
+  border-radius: 15px;
+  margin-top: 32px;
+}
+.coins_q_ans{
+  text-align: center;
+}
+.coins_q_ans h3{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  color:  var(--Secondary_yellow);
+  text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.coins_q_ans p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--Secondary_white);
+  text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+.coins_q_ans_2s{
+  margin-top: 25px;
+}
+
+
+
+/*============================================ Lucky Wheel ============================================*/
+
+.wh_container_wheel{
+  border-radius: 23px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 18px 0px #0000002B;
+          box-shadow: 0px 0px 18px 0px #0000002B;
+}
+.Sh_common_card_headding{
+  height: 70px;
+  line-height: 70px;
+  border-radius: 23px 23px 0 0;
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+}
+.Sh_common_card_headding h3{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--Secondary_white);
+}
+.wh_wheel_body{
+  text-align: center;
+}
+.whell_spin_count_btn{
+  margin:  60px 0 40px;
+  text-align: center;
+}
+.whell_spin_count_btn button{
+  padding: 15px 50px;
+  border-radius: 16px;
+  font-size: 18px ;
+  font-weight: 500;
+  line-height: 27px;
+  background: var(--Secondary_yellow);
+  border: none;
+}
+.wh_wheel_img img{
+  max-width: 650px;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.wh_total_winning_card{
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 19px;
+  background: var(--Secondary_white);
+  -webkit-box-shadow: 0px 4px 38px 0px #0000001C;
+          box-shadow: 0px 4px 38px 0px #0000001C;
+}
+.wh_winning_headding{
+  margin-bottom: 45px;
+}
+.wh_winning_headding h2{
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: 500;
+}
+.wh_winning_body h4{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--Secondary_blue);
+}
+.wh_winning_body p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 15px 0 25px;
+}
+
+
+
+/*============================================ Lottery ============================================*/
+.sh_lottary_body{
+  text-align: center;
+  padding: 40px;
+}
+.sh_lottary_body h4{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #00000060;
+}
+.sh_lottary_body h3{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--primary_gray);
+}
+.lottery_offer_coundown {
+  padding: 4px;
+  -webkit-box-shadow: -2px 4px 31px 0px #0000001A;
+          box-shadow: -2px 4px 31px 0px #0000001A;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+.flip-clock-divider .flip-clock-label {
+  display: none;
+}
+.flip-clock-wrapper {
+  margin: 0em;
+  border-radius: 6px;
+}
+
+
+
+.sh_lottery_tickets{
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sh_lottery_card{
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--Secondary_white);
+  -webkit-box-shadow: 2px 13px 46px 0px #00000021;
+          box-shadow: 2px 13px 46px 0px #00000021;
+}
+.sh_lottery_card:not(:first-child){
+  margin-left: 15px;
+}
+.sh_lottery_card h3{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #00000060;
+}
+.sh_lottery_card ul li{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Secondary_green);
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+.sh_lottery_card ul li span{
+  margin-left: 15px;
+}
+.sh_lottery_card ul li img{
+  width: 24px ;
+  height: auto;
+}
+
+
+.buy_ticket_btn{
+  margin-top: 15px;
+}
+.buy_ticket_btn button{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 26px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: var(--Secondary_yellow);
+  -webkit-box-shadow: 0px 10px 24px 0px #00000024;
+          box-shadow: 0px 10px 24px 0px #00000024;
+  margin: 50px 0 45px;
+}
+
+
+.sh_purchased_ticket{
+  border-radius: 20px;
+  padding: 20px ;
+  background: #6288B080;
+}
+.sh_purchased_ticket h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.sh_purchased_tickets{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px auto;
+}
+.purchased_ticet_single_items {
+  width: 100%;
+  background: var(--Secondary_white);
+  margin:0 8px;
+  border-radius: 10px;
+  padding: 8px;
+  -webkit-box-shadow: 0px -1px 27px 0px #00000036;
+          box-shadow: 0px -1px 27px 0px #00000036;
+}
+.purchased_ticet_single_items span{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  padding:5px ;
+  color: var(--Secondary_green);
+  display: block;
+  border-radius: 6px;
+  border: 1px dashed #6C757D80
+}
+.horse_card_body{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+.horse_img{
+  width: 17%;
+}
+.horse_table{
+  width: 51%;
+}
+.horse_table table{
+  width: 100% !important;
+  border-collapse:separate;
+  border-spacing:0 5px;
+}
+.horse_table table > tbody > tr{
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 13px 0px #0000001A;
+          box-shadow: 0px 4px 13px 0px #0000001A;
+  background: var(--Secondary_white);
+}
+.sh_r_radius{
+  border-radius: 0 10px 10px 0 ;
+}
+.sh_l_radius{
+  border-radius: 10px 0 0 10px ;
+}
+.horse_table table > tbody > tr >  th,
+.horse_table table > tbody > tr >  td{
+  padding: 8px 12px;
+  font-size: 15px;
+  line-height: 21px;
+}
+.horse_table table > tbody > tr >  th{
+  font-weight: 300;
+}
+.horse_table table > tbody > tr >  td{
+  font-weight: 500;
+}
+.sh_blue{
+  color: var(--Secondary_blue);
+}
+.horse_buy_ticket{
+  width: 28%;
+  background: var(--Secondary_white);
+  -webkit-box-shadow: 0px 3px 11px 0px #0000002B;
+          box-shadow: 0px 3px 11px 0px #0000002B;
+  padding: 10px 30px;
+  border-radius: 11px;
+  text-align: center;
+}
+.horse_buy_ticket ul{
+  max-width: 115px;
+  width: 100%;
+  margin: 0 auto;
+}
+.horse_buy_ticket ul li{
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.horse_buy_ticket ul li img{
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+.horse_buy_ticket p{
+  max-width: 135px;
+  width: 100%;
+  margin: 12px auto;
+  background: var(--Secondary_white);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #00000060;
+  text-align: center;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 4px 13px 0px #0000001F;
+          box-shadow: 0px 4px 13px 0px #0000001F;
+  padding: 6px 12px;
+}
+.horse_buy_ticket button{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  border: none;
+  padding: 4px 20px;
+  outline: none;
+  background: var(--Secondary_yellow);
+  margin: 0 auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 7px 13px 0px #0000001A;
+          box-shadow: 0px 7px 13px 0px #0000001A;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.horse_buy_ticket button:hover{
+    background: #FAC007BF;
+}
+/* lottary datetime-count */
+
+.lottery_offer_coundown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flip-clock-wrapper {
+  width: auto;
+}
+.flip-clock-wrapper ul {
+    width: 53px;
+  }
+
+/*============================================ HORSE race ============================================*/
+.Sh_horserace_headding{
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+                              rgba(41, 211, 150, 0.92) 102.4%);
+}
+
+.sh_horserace_card p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sh_horserace_card a{
+  color: var(--Secondary_blue);
+  margin-top: 22px;
+  display: inline-block;
+  text-decoration: underline;font-weight: 700;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.sh_horserace_card a:hover{
+  color: var(--Secondary_blue_hue);
+}
+.horse_single_card{
+  margin-top: 35px;
+}
+.card_header{
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+  -webkit-box-shadow: 6px 10px 20px 0px #00000024;
+          box-shadow: 6px 10px 20px 0px #00000024;
+  border-radius: 10px 10px 0 0;
+  height: 32px;
+  line-height: 32px;
+}
+.horse_single_card h3{
+  line-height: 32px;
+  padding: 0 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Secondary_white);
+}
+
+.sh_watch_video_hedding p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+
+/*============================================ Video Area ============================================*/
+.sh_w_row_padding{
+  padding: 0 30px;
+}
+.sh_watch_video_hedding{
+  text-align: center;
+}
+.sh_watch_video_hedding h4{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--Secondary_blue);
+}
+
+
+.sh-watch_video{
+  border-radius: 5px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0px 4px 36px 0px #0000003B;
+          box-shadow: 0px 4px 36px 0px #0000003B;
+}
+.sh_watch_video_content{
+  padding: 16px;
+}
+.sh_watch_video_bg{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sh_play_btn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sh_play_btn a{
+  display: inline-block;
+}
+.sh_play_btn a i{
+  font-size: 50px;
+  color: var(--Secondary_white);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.sh_play_btn a:hover i{
+  color: var(--Secondary_yellow);
+}
+.sh_watch_video_content h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.sh_watch_video_content p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.sh_watch_button_area{
+  max-width: 205px;
+  width: 100%;
+  padding: 0 5px;
+  margin: 12px 0 0;
+}
+.sh_watch_button_area ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sh_watch_button_area ul li {
+  max-width: 92px;
+  width: 100%;
+  height: 21px;
+}
+
+
+.watch_reward_coin{
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.watch_reward_coin button{
+  width: 100%;
+  border: none;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--Secondary_white);
+  border-radius: 4px;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%,
+                               rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%,
+                               rgba(41, 211, 150, 0.92) 102.4%);
+}
+
+
+
+
+/*============================================ Watch Area ============================================*/
+.sh_watch_pg_headding h4{
+  font-size: 32px;
+  line-height: 48px;
+}
+.sh_watch_episode{
+  text-align: center;
+  padding: 28px 30px;
+  border-radius: 20px;
+  background-color: var(--Secondary_yellow);
+  margin: 35px 0 30px; 
+}
+.sh_watch_episode h4{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.sh_watch_episode p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 6px;
+}
+.sh_watch_pg_main_video{
+  background: #000000;
+  border-radius: 29px;
+  padding: 22px 20px 55px 20px;
+}
+
+.sh_watch_pg_video{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sh_watch_power{
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+  width: 90px;
+  height: 30px;
+}
+.sh_watch_power ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.sh_watch_power ul li span{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #FC5E5E;
+  margin-right: 10px;
+}
+.sh_watch_power ul li a img{
+  width: 29px;
+  height: auto;
+}
+
+
+/*iframe poster code*/
+
+ /* The outer-div to move the elements */
+.box-video {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+ /* Set Cover aka Background-Image */
+.box-video .bg-video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+ /* Add light shade to make play button visible*/
+.bg-video::after{ 
+  content:'';
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 3;
+    }
+
+
+/* The Play-Button using CSS-Only */
+.box-video .bt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -30px 0 0 -30px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: var(--Secondary_white);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  text-indent: -999em;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+/* The Play-Triangle */
+.box-video .bt-play:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin: -12px 0 0 -6px;
+  border: solid transparent;
+  border-left-color: #000;
+  border-width: 12px 20px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.box-video:hover .bt-play {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* When Class added the Cover gets hidden... */
+.box-video.open .bg-video{
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: all .6s .8s;
+  -o-transition: all .6s .8s;
+  transition: all .6s .8s;  
+}
+
+/* and iframe shows up */
+.box-video.open .video-container{
+  opacity: 1;
+  -webkit-transition: all .6s .8s;
+  -o-transition: all .6s .8s;
+  transition: all .6s .8s;
+}
+
+/* Giving the div ratio of 16:9 with padding */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin: 0;
+  z-index: 1;
+  padding-bottom: 56.27198%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*===================== right_sidebar style =====================*/
+.righ_sidbear {
+  padding: 29px 40px;
+  -webkit-box-shadow: 0px 4px 34px 0px #0000001A;
+          box-shadow: 0px 4px 34px 0px #0000001A;
+  border-radius: 14px;
+}
+.user_details{
+  max-width: 115px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.user_title {
+  margin-top: 8px;
+}
+.user_title h4{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+}
+.user_author h5{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #00000060;
+}
+.author_icon {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.author_icon img{
+  width: 33px;
+  height: auto;
+}
+.edit_account a, .user_logout a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 6px 4px;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.edit_account a:hover, .user_logout a:hover{
+  background: #f3f3f3;
+}
+.edit_account a img,
+.user_logout a img{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+.user_logout{
+  margin-top: 5px;
+}
+.right_sidbear_af_bg{
+  position: relative;
+}
+.right_sidbear_af_bg::after{
+  position: absolute;
+  content: "";
+  top: 100%;
+  right: 0;
+  width: 133%;
+  height: 80%;
+  background: url('../images/home/Saly-1.png')no-repeat scroll 0 0 / cover;
+}
+
+
+.sh_right_sidber_widget_2 .coins_star_btn  a{
+  padding: 35px 6px;
+  font-size: 13px;
+}
+.sh_watch_btn a {
+  padding: 35px 8px;
+  max-width: 100%;
+  width: 100%;
+}
+.coins_withdraw_btn.sh_rsidbear_withdraw_button{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.coins_withdraw_btn.sh_rsidbear_withdraw_button a {
+  margin-left: 0; 
+  margin: 5px 0;
+  padding: 8px;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+
+
+/*============================================ My Website Area ============================================*/
+.my_site_video_card{
+  padding: 10px 32px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 14px 0px #00000021;
+          box-shadow: 0px 4px 14px 0px #00000021;
+}
+.sh_promoted_site_video,
+.sh_pending_site_video{
+  margin-top: 28px;
+}
+.sh_promoted_site_video_headding,
+.sh_pending_site_video_headding{
+  text-align: center;
+  height: 42px;
+  border-radius: 5px;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+      rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+      rgba(41, 211, 150, 0.92) 102.4%);
+}
+.sh_pending_site_video_headding{
+  background: -o-linear-gradient(293.62deg, #0069D9 15.21%, #00F0FF 91.31%);
+  background: linear-gradient(156.38deg, #0069D9 15.21%, #00F0FF 91.31%);
+}
+.sh_promoted_site_video_headding h4,
+.sh_pending_site_video_headding h4{
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 400;
+  color: var(--Secondary_white);
+}
+.sh_promoted_site_video_status,
+.sh_pending_site_video_status{
+  margin-top: 1px;
+}
+.sh_promoted_site_video_status ul,
+.sh_pending_site_video_status ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 30px; 
+  background: var(--Secondary_blue_hue);
+  border-radius: 5px;
+}
+.sh_promoted_site_video_status ul li,
+.sh_pending_site_video_status ul li{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--Secondary_white);
+}
+.sh_pormoted_site_video_bd_msg,
+.sh_pending_site_video_bd_msg{
+  background: #FAC00760;
+}
+.sh_pormoted_site_video_bd_msg p,
+.sh_pending_site_video_bd_msg p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 25px 25px 30px;
+  text-align: center;
+}
+.sh_warning_site_video_msg{
+  padding: 60px 30px 125px;
+  text-align: center;
+}
+.sh_warning_site_video_msg p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #f00;
+  max-width: 445px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*============================================ Add webSite Area ============================================*/
+.sh_add_website{
+  background: var(--Secondary_blue_hue);
+}
+.sh_add_website_headding h4{
+  color: var(--Secondary_yellow);
+}
+
+.sh_add_website_form{
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.sh_add_website_form form .form-group{
+  margin-bottom: 35px;
+}
+.sh_add_website_form form label{
+  color: var(--Secondary_white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+.sh_add_website_form form input, .sh_add_website_form form select {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  padding: 6px 12px;
+  color: #00000090;
+  border-radius: unset;
+  -webkit-box-shadow: 0px 4px 13px 0px #00000026;
+          box-shadow: 0px 4px 13px 0px #00000026;
+  border: 1px solid transparent;
+  height: 32px;
+}
+.sh_add_website_form form input:focus,
+.sh_add_website_form form select:focus{
+  border-color: var(--Secondary_blue);
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+.sh_add_website_form form input::-webkit-input-placeholder, .sh_add_website_form form select::-webkit-input-placeholder{
+  color: #00000080;
+}
+.sh_add_website_form form input::-moz-placeholder, .sh_add_website_form form select::-moz-placeholder{
+  color: #00000080;
+}
+.sh_add_website_form form input:-ms-input-placeholder, .sh_add_website_form form select:-ms-input-placeholder{
+  color: #00000080;
+}
+.sh_add_website_form form input::-ms-input-placeholder, .sh_add_website_form form select::-ms-input-placeholder{
+  color: #00000080;
+}
+.sh_add_website_form form input::placeholder,
+.sh_add_website_form form select::placeholder{
+  color: #00000080;
+}
+.sh_add_website_form form select{
+  padding: 7px 12px;
+}
+.sh_add_website_form form select.seletc_dis_enable {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 12px;
+  background-position-x: 94% !important;
+}
+.sh_add_website_form form select.min_max_en_select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/addSite/up_down_arrow.png");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 3px;
+  padding-right: 2rem;
+  background-size: 12px;
+}
+.sh_add_website_form form select.gen_contry_select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/addSite/down_arrow.png");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 10px;
+  padding-right: 2rem;
+  background-size: 12px;
+}
+.select_between_and{
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--Secondary_yellow);
+  margin: 8px 0;
+}
+.sh_add_website_form input[type="submit"] {
+    height: 32px;
+    width: 120px;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 500;
+    background: var(--Secondary_white);
+}
+.sh_add_website_form input[type="submit"]:hover {
+  color: var(--primary);
+}
+
+
+
+/*============================================ Visit Site Area ============================================*/
+.sh_visit_site_item{
+  margin-top: 60px;
+}
+.sh_visit_row .col-md-6:nth-child(odd){
+  padding-left: 30px;
+}
+.sh_visit_row .col-md-6:nth-child(even){
+  padding-right: 30px;
+}
+/*   ==========================================   1. Footer area css start     =======================================  */
+
+.Footer_area{
+  padding: 16px 20px;
+  background: var(--Secondary_white);
+  -webkit-box-shadow: 0px -6px 14px 0px #0000003B;
+          box-shadow: 0px -6px 14px 0px #0000003B;
+}
+.footer_left{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_left ul li,
+.footer_left p{
+  padding: 0 15px;
+  margin: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.follow_us{
+    color: #00000070;
+}
+.footer_left ul li a{
+  display: inline-block;
+}
+.footer_left ul li a img{
+  width: 27px;
+  height: auto;
+}
+
+
+/*========================================
+        select box Style 
+========================================*/
+.footer_language_select {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer_language_select img{
+  width: 25px;
+  height: 25px;
+}
+.footer_language_select select {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/home/arrow_up.png");
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: 14px;
+  padding-right: 2rem;
+  background-size: 12px;
+  width: 130px;
+  cursor: pointer;
+}
+
+/*   ==========================================   1. Footer area css End     =======================================  */
+
+.modal-dialog {
+  max-width: 595px;
+  margin: 28rem auto;
+}
+.modal-content {
+  border-radius: 16px;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, rgba(41, 211, 150, 0.92) 102.4%);
+  padding: 55px;
+  border: none;
+}
+#success_watch .modal-content{
+  background: rgba(255, 255, 255, 0.76);
+  padding: 40px 8px;
+}
+
+.modal-backdrop {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+.mdl-cancel-btn {
+  position: absolute;
+  right: -33px;
+  top: -34px;
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  background: var(--Secondary_white);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: lightseagreen;
+}
+.mdl-cancel-btn:focus{
+  outline: 0;
+  border: none;
+}
+.watch_success .mdl-cancel-btn{
+  color: #fff;
+  background: #f00;
+  top: -28px;
+  right: 5px;
+}
+.login_success h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  color: var(--Secondary_white);
+  max-width: 280px;
+  text-align: center;
+  margin: 0 auto;
+}
+.success_watch_msg h3{
+  font-size: 23px;
+  line-height: 34px;
+  font-weight: 500;
+  color: var(--Secondary_white);
+}
+.success_watch_msg{
+  padding: 85px 60px;
+  text-align: center;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+          rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+          rgba(41, 211, 150, 0.92) 102.4%);
+  border-radius: 20px;
+}
+.watch_another_btn a{
+  display: block;
+  height: 55px;
+  line-height: 55px;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--Secondary_white);
+  text-align: center;
+  border-radius: 12px;
+  background: -o-linear-gradient(237.82deg, #0069D9 19.31%, #00F0FF 107.16%);
+  background: linear-gradient(212.18deg, #0069D9 19.31%, #00F0FF 107.16%);
+  -webkit-box-shadow: 0px 4px 15px 0px #00000040;
+          box-shadow: 0px 4px 15px 0px #00000040;
+  margin-top: 14px;
+}
+
+.promote_modal .modal-content{
+  background: var(--Secondary_white);
+  padding: 50px 20px;
+}
+.promote_modal .modal-dialog {
+  max-width: 290px;
+  width: 100%;
+  margin-top: 15rem;
+}
+.sh_promot_modal a{
+  display: block;
+  background: -o-linear-gradient(325.82deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+      rgba(41, 211, 150, 0.92) 102.4%);
+  background: linear-gradient(124.18deg, #00B2D9 -15.15%, rgba(13, 188, 196, 0.975) 36.28%, 
+      rgba(41, 211, 150, 0.92) 102.4%);
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding:0 30px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--Secondary_white);
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.sh_promot_modal a:hover{
+ background:-o-linear-gradient(325.82deg, #00A0C4 -15.15%, rgba(13, 179, 187, 0.98) 36.28%, rgba(12, 166, 111, 0.92) 102.4%);
+ background:linear-gradient(124.18deg, #00A0C4 -15.15%, rgba(13, 179, 187, 0.98) 36.28%, rgba(12, 166, 111, 0.92) 102.4%);
+}
+.sh_promot_modal a i{
+  margin-right: 20px;
+}
+.sh_promot_modal a img{
+  width: 24px; margin-right: 20px;
+}
+.sh_promot_modal a:first-child i{
+  background: var(--Secondary_white);
+  width: 24px; 
+  height: 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 8px 0px #00000040;
+          box-shadow: 0px 4px 8px 0px #00000040;
+  color: darkcyan;
+  text-align: center;
+  line-height: 24px;
+}
+
+
+/* ==============================================================================================================================
+                                     Wrong password Start paage Name 
+================================================================================================================================ */
+.wrong_password p {
+  padding-top: 20px;
+  color: #fff;
+}
+.wrong_password p span{
+  color: #FAC007;
+}
+.wrong_password p a{
+  color: #FAC007;
+}
+/* ========  Sign In area start ====== */
+.sign_input_form_area{
+
+}
+.sign_input_form_area label{
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.7;
+  padding: 0;
+  padding-bottom: 10px;
+}
+.sign_input_form_area input{
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.sign_input_form_area input::-webkit-input-placeholder{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_input_form_area input::-moz-placeholder{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_input_form_area input:-ms-input-placeholder{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_input_form_area input::-ms-input-placeholder{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_input_form_area input::placeholder{
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+}
+.sign_form_area_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.sign_form_area_btn a{
+  background: #FAC007;
+  color: #000;
+  display: inline-block;
+  padding: 8px 40px;
+  border-radius: 5px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.sign_form_area_btn a:hover{
+  background: #FAC007D6;
+  color: #000;
+}
+.sign_form_area_btn p{
+  color: #fff;
+}
+.sign_form_area_btn a img {
+  width: 15px;
+  height: auto;
+}
+.sign_input_form_area p{
+  color: #fff;
+  line-height: 1.7;
+}
+.sign_input_form_area p span{
+  color: #0069D9;
+}
+.sign_input_form_area select{
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 24px;
+  font-weight: 500;
+  z-index: 1;
+}
+.gen_country_select {
+  z-index: 9999999999999999;
+  position: relative;
+}
